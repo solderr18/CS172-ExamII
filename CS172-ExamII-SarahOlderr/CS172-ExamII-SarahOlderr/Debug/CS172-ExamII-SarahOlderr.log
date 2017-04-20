@@ -1,0 +1,5 @@
+﻿  test.cpp
+c:\users\solderr18\documents\github\cs2 exam ii\cs172-examii-saraholderr\cs172-examii-saraholderr\city.h(53): warning C4018: '<': signed/unsigned mismatch
+c:\users\solderr18\documents\github\cs2 exam ii\cs172-examii-saraholderr\cs172-examii-saraholderr\city.h(80): warning C4715: 'City::getCitizenWithId': not all control paths return a value
+  CS172-ExamII-SarahOlderr.vcxproj -> C:\Users\solderr18\Documents\GitHub\CS2 exam II\CS172-ExamII-SarahOlderr\Debug\CS172-ExamII-SarahOlderr.exe
+  CS172-ExamII-SarahOlderr.vcxproj -> C:\Users\solderr18\Documents\GitHub\CS2 exam II\CS172-ExamII-SarahOlderr\Debug\CS172-ExamII-SarahOlderr.pdb (Full PDB)
