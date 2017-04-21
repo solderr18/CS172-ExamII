@@ -16,6 +16,7 @@ int main() {
 	City* seattle = new City("Seattle");
 
 	//bonus if you know why he picked these names and ids
+	//mountain bikers and placement in some tournament ???? or national ranking or something>?
 	if (spokane->populationSize() == 0)
 	{
 		Citizen* brandon = new Citizen(1, "Brandon", "Semenuk", "Green");
@@ -41,6 +42,7 @@ int main() {
 
 	//check if need to add citizens to katchem
 	//XC if u know why he chose these names
+	//apple ppl
 	if (katchem->populationSize() == 0)
 	{
 		Citizen* Bartley = new Citizen(6, "Bartley", "Andre", "Green");
@@ -114,6 +116,33 @@ int main() {
 		cout << "ERROR: Seattle has the wrong population size" << endl;;
 	}
 	
+	vector<Citizen> blueLovers = spokane->getCitizenForFavoriteColor("Blue"); //there are only compiling errors in the source file??
+	if (blueLovers.size() != 2)
+	{
+		errors++;
+		cout << "ERROR: wrong number of blue lovers in Spokane" << endl;
+	}
+	vector<Citizen> greenLovers = katchem->getCitizenForFavoriteColor("Green");
+	if (greenLovers.size() != 1)
+	{
+		errors++;
+		cout << "ERROR: wrong number of green lovers in Katchem" << endl;
+	}
+	else
+	{
+		Citizen* greenlover = greenLovers.at(0);
+		if (greenlover->getLastName() != "Andre" && greenlover->getLastName() != "Bartley")
+		{
+			errors++;
+			cout << "ERROR: The green lover was wrong" << endl;
+		}
+	}
+	cout << "ERROR COUNT: " << errors << ".\n";
+	cout << "Be sure to run this 3 times and be sure that on the 2nd and 3rd run you get 1 SUCCESS." << endl;
 
+	//delete cities when done
+	delete katchem;
+	delete spokane;
+	delete seattle;
 	return 0;
 }
